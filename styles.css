@@ -1,0 +1,151 @@
+/*------------------------------------*\
+    INDEX
+\*------------------------------------*/
+
+/*
+BUTTON
+MODAL
+
+TABLET SIZES
+
+DESKTOP AND ABOVE SIZES
+
+*/
+
+main {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*------------------------------------*\
+    BUTTON (MOBILE)
+\*------------------------------------*/
+
+#modal-button {
+    background: #65A599;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 1.25rem;
+    padding: 0.75rem 2rem;
+    transition: ease-out 0.2s;
+}
+
+#modal-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/*------------------------------------*\
+    END OF BUTTON
+\*------------------------------------*/
+
+/*------------------------------------*\
+    MODAL (Mobile)
+\*------------------------------------*/
+
+.modal {
+    background-color: rgba(125, 182, 173, 0.75);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+.modal .btn {
+    display: block;
+    margin: 0.938rem auto 0 auto;
+}
+
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    min-height: calc(100% - 25rem);
+    position: relative;
+    width: auto;
+}
+
+.modal-content {
+    background-color: #FFFFFF;
+    color: #72AFA4;
+    font-size: 1rem;
+    height: 13rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0.25rem 1rem;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+#close-modal {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    outline: none;
+    width: 3.125rem;
+}
+
+#close-modal span {
+    color: #65A599;
+    font-size: 3rem;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+}
+
+#modal-title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/*------------------------------------*\
+    END OF MODAL
+\*------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+
+    /*------------------------------------*\
+            MODAL (Tablet)
+    \*------------------------------------*/
+
+    .modal-content {
+        font-size: 1.5rem;
+        height: 18rem;
+        margin-right: 5%;
+    }
+
+    #modal-title {
+        font-size: 3rem;
+    }
+
+    .modal-content p {
+        margin: 0.5rem 0;
+    }
+
+    /*------------------------------------*\
+            END OF MODAL
+    \*------------------------------------*/
+}
+
+@media only screen and (min-width: 1024px) {
+
+    /*------------------------------------*\
+            MODAL (Desktop)
+    \*------------------------------------*/
+
+    .modal-dialog {
+        max-width: 75%;
+    }
+
+    .modal-content {
+        margin-left: 0;
+    }
+
+    /*------------------------------------*\
+            END OF MODAL
+    \*------------------------------------*/
+}

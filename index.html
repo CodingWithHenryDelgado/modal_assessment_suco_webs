@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css?ver=1">
+    <meta name="description" property="og:description" content="Modal Question provided by SUCO Webs" />
+    <title>Modal Assessment</title>
+</head>
+
+<body>
+    <main>
+        <div class="button-div">
+            <button id="modal-button">
+                MODAL
+            </button>
+        </div>
+        <div class="modal" id="popup" aria-labelledby="modal" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button id="close-modal" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div>
+                        <p id="modal-title">Modal</p>
+                    </div>
+                    <div class="modal-body">
+                        <p>Content goes here</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
